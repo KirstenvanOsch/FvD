@@ -1,0 +1,60 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+ :root { 
+    --blauw: #1e9bff; 
+ }
+
+
+* { 
+    margin:0 ; 
+    padding:0; 
+    font-family: 'Bigelow Rules', cursive;
+    
+}
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1 { 
+    font-size: 8em;
+    margin: 1em;
+}
+h2 { 
+    font-size: 2.5em;
+} 
+section { 
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #27282c;
+    
+}
+article { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    flex-direction: column;
+}
+
+
+a { 
+    position: relative;
+    background: #fff;
+    color: #000; 
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+a:hover { 
+    letter-spacing: 0.25em;
+    background: var(--blauw); 
+    box-shadow: 0 0 35px var(--blauw);
+}
+
+section:first-of-type { 
+    z-index: 10;
+}
